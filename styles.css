@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Manrope-Bold";
-  src: url(./Manrope-Bold.ttf) format("truetype");
+  font-family: "Manrope-Medium";
+  src: url(./Manrope-Medium.ttf) format("truetype");
 }
 
 @font-face {
@@ -16,13 +16,13 @@ h2 {
 }
 
 h1 {
-  font-family: "Manrope-Bold", sans-serif;
-  font-size: 2.5rem;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 1.5rem;
 }
 
 h2 {
   font-family: "Manrope-Light", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .underline {
@@ -31,12 +31,14 @@ h2 {
 
 body {
   min-height: 90vh;
-  min-width: 100vw;
+  min-width: 80vw;
+  max-width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin: 0 auto;
 }
 
 .wave {
@@ -45,6 +47,10 @@ body {
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
+}
+
+a {
+  color: black;
 }
 
 a:visited {
