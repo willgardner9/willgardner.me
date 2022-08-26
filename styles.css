@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url(./Manrope-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Manrope-Light";
+  src: url(./Manrope-Light.ttf) format("truetype");
+}
+
+h1,
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Manrope-Bold", sans-serif;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: "Manrope-Light", sans-serif;
+  font-size: 2.5rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+body {
+  min-height: 90vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+a:visited {
+  color: black;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+section img {
+  width: 2rem;
+}
